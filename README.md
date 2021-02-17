@@ -43,9 +43,24 @@ print(div3)
 div4 = 514<br>
 print(yourdiv - div4) #即114514-514=11400
 
+> #input输入，用变量存储<br>
+name = input("what 's your name? ")  #将键盘输入的内容存储为name变量<br>
+print("ok,you name is: "  + name)   #输出结果会显示“ok,you name is: '输入的名字' ”
+
 > #输出当前时间<br>
 import datetime  <br>
 NT= datetime.datetime.now()  #获得当前时间，但这是时间数组格式<br>
 NT2 = NT.strftime("%Y-%m-%d %H:%M:%S")  #将变量NT的时间值转换为指定的格式<br>
 print(NT)  #默认时间戳<br>
 print(NT2) #规定的时间格式
+
+
+> #输出年龄（给予变量类型定义）（int整数型 float浮点小数型）
+NT3 = NT.strftime("%Y") #承接结合上面的输出时间 <br>
+nowtime = int(NT3) #赋予类型可以提前在运算式前赋予<br>
+brith_year = input("你什么年份出生？（输入阿拉伯数字）：  ")<br>
+age = nowtime - int(brith_year) #int将字符串转换成数字型，否则下面无法输出，因为数字型无法与字符串运算<br>
+#也可以这样写，提前将要输入input的内容处理为数字型<br>
+brith_year = int(input("你什么年份出生？（输入阿拉伯数字）：  "))<br>
+后文则只需要：age = nowtime - brith_year #只改变上面这一行代码的情况下<br>
+print("ok,你今年:" , age)  #输出年龄<br>
