@@ -19,7 +19,10 @@ shuchu.close()
 
 > #不换行输出<br>
 print('hello','world','i fuck you!','now tiem is:',11+5)
-  
+
+> #重复输出<br>
+print('重复输出的内容' * 10) # '* 10'代表输出十次
+
 > #输出当前时间<br>
 import datetime  <br>
 NT= datetime.datetime.now()  #获得当前时间，但这是时间数组格式<br>
