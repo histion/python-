@@ -30,4 +30,16 @@ NT2 = NT.strftime("%Y-%m-%d %H:%M:%S")  #转换为指定的格式<br>
 print(NT)  #默认时间戳<br>
 print(NT2) #规定的时间格式
 
-# 标题
+# 变量
+
+> #变量名——变量值（数字）<br>
+yourdiv = 114514 <br>
+print(yourdiv)
+
+> #变量名——变量值<br>
+div2 = 'i am py'<br>
+print(div2)
+
+> #变量名——变量名（最后会输出后者的值，即114514）<br>
+div3 = yourdiv<br>
+print(div3)
