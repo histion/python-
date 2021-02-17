@@ -27,6 +27,10 @@ print('重复输出的内容' * 10) # * 10 代表输出十次
 
 # 变量
 
+1. 变量名 = 变量值
+2. 变量值可以是数字，字符……
+3.变量名与变量名可以用来做运算（均必须是int型）
+
 > #变量名——变量值（数字，可以是整数也可以是小数）<br>
 yourdiv = 114514 <br>
 print(yourdiv)
@@ -55,7 +59,7 @@ print(NT)  #默认时间戳<br>
 print(NT2) #规定的时间格式
 
 
-> #输出年龄（给予变量类型定义）（int整数型 float浮点小数型）
+> #输出年龄（给予变量类型定义）（int整数型 float浮点小数型）<br>
 NT3 = NT.strftime("%Y") #承接结合上面的输出时间 <br>
 nowtime = int(NT3) #赋予类型可以提前在运算式前赋予<br>
 brith_year = input("你什么年份出生？（输入阿拉伯数字）：  ")<br>
@@ -63,4 +67,4 @@ age = nowtime - int(brith_year) #int将字符串转换成数字型，否则下�
 #也可以这样写，提前将要输入input的内容处理为数字型<br>
 brith_year = int(input("你什么年份出生？（输入阿拉伯数字）：  "))<br>
 后文则只需要：age = nowtime - brith_year #只改变上面这一行代码的情况下<br>
-print("ok,你今年:" , age)  #输出年龄<br>
+print("ok,你今年:" , age)  #输出年龄
