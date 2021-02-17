@@ -21,7 +21,7 @@ shuchu.close()
 print('hello','world','i fuck you!','now tiem is:',11+5)
 
 > #重复输出<br>
-print('重复输出的内容' * 10) # '* 10'代表输出十次
+print('重复输出的内容' * 10) # * 10 代表输出十次
 
 > #输出当前时间<br>
 import datetime  <br>
