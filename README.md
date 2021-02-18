@@ -69,3 +69,15 @@ print(“ok，你今年:” , age)<br>
 >>brith_year = int(input("你什么年份出生？（输入阿拉伯数字）：  "))<br>
 >>后文则只需要：age = nowtime - brith_year #只改变上面这一行代码的情况下<br>
 >>print("ok,你今年:" , age)  #输出年龄
+
+
+> #变量三引号多行输出<br>
+example = '''<br>
+这是一个，<br>
+可以…<br>
+
+多行的
+
+变量<br>
+'''
+print(example)  #包括空行在内均会被输出
