@@ -109,6 +109,7 @@ print(NT2) #规定的时间格式
     
 # 格式化字符串 “f”
 基本用法 f'{}{}'
+
     name = 'skt have a new loler'
     last = 'uzi'
     word = f'{name} he is [{last}]' #注意[]是包在{last}外面的
