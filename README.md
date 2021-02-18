@@ -60,15 +60,17 @@ print(NT2) #规定的时间格式
 
 
 > #输出年龄（给予变量类型定义）（int整数型 float浮点小数型）<br>
-NT3 = NT.strftime("%Y") #承接结合上面的输出时间 <br>
-nowtime = int(NT3) #赋予类型可以提前在运算式前赋予<br>
-brith_year = input("你什么年份出生？（输入阿拉伯数字）：  ")<br>
-age = nowtime - int(brith_year) #int将字符串转换成数字型，否则下面无法输出，因为数字型无法与字符串运算<br>
-print(“ok，你今年:” , age)<br>
->>#也可以这样写，提前将要输入input的内容处理为数字型<br>
->>brith_year = int(input("你什么年份出生？（输入阿拉伯数字）：  "))<br>
->>后文则只需要：age = nowtime - brith_year #只改变上面这一行代码的情况下<br>
->>print("ok,你今年:" , age)  #输出年龄
+
+    NT3 = NT.strftime("%Y")   #承接结合上面的输出时间 
+    nowtime = int(NT3)        #赋予类型可以提前在运算式前赋予
+    brith_year = input("你什么年份出生？（输入阿拉伯数字）：  ") #用户在此输入的内容将被记录到brith_year变量
+    age = nowtime - int(brith_year)    #int将字符串转换成数字型，否则下面无法输出，因为数字型无法与字符串运算
+    print(“ok，你今年:” , age)
+    
+    #也可以这样写，提前将要输入input的内容处理为数字型<br>
+    brith_year = int(input("你什么年份出生？（输入阿拉伯数字）：  "))<br>
+    后文则只需要：age = nowtime - brith_year #只改变上面这一行代码的情况下<br>
+    print("ok,你今年:" , age)  #输出年龄
 
 
 > #变量三引号多行输出<br>
@@ -86,7 +88,7 @@ print(“ok，你今年:” , age)<br>
 # 索引
 
 当以A为起点从左往右时，索引对应 ABCD E————012345，是的，空格也是计入的
-当从A为起点从右往左时，索引对应 AE DCB————0 -1 -2 -3 -4 -5
+当从A为起点从右往左时，索引对应 ABCD E————0 -5 -4 -3 -2 -1
 
     索引 = 'ABCD E'
     print(索引[0])
@@ -94,8 +96,8 @@ print(“ok，你今年:” , age)<br>
     print(索引[-1])
     
     #如果将[]内定义区间（例如1:3），则会输出区间内所有内容,但会排除3这个索引，即不输出D
-    print(索引[1:3])
-    #输出结果唯BC
+    print(索引[1:3])    #输出结果为BC
+    print(索引[1:-3])   #输出结果为BC（注意，定义的是区间，而不是方向！所以[1:-3]实际上就是[1:3]）
     
     #如果不定义区间，则任何一边不被定义的区间将直接输出到最后一个字符，如果两边都不被定义，则完整输出变量所有内容
     print(索引[1:])  #输出BCD E
@@ -105,3 +107,10 @@ print(“ok，你今年:” , age)<br>
     全索引 = 索引[:]
     print(全索引)    #输出ABCD E
     
+# 格式化字符串 “f”
+基本用法 f'{}{}'
+    name = 'skt have a new loler'
+    last = 'uzi'
+    word = f'{name} he is [{last}]' #注意[]是包在{last}外面的
+    print(word)
+    #skt have a new loler he is [uzi]
