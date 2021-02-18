@@ -114,3 +114,28 @@ print(NT2) #规定的时间格式
     word = f'{name} he is [{last}]' #注意[]是包在{last}外面的
     print(word)
     #skt have a new loler he is [uzi]
+    
+# 计算字符串数量 len函数
+空格和标点也计入
+
+    how_many = 'wor ds!'
+    print(len(how_many))
+    
+    #同样可以配合input计算外部文字
+    how_many = 'wor ds!'
+    print(len(how_many))
+    test = input('输入要计算的文字')    #不计算除了第一行外的内容字符数
+    print(len(test))
+    
+# 方法
+只对字符串有效的函数叫做方法
+upper方法，转换大写
+lower方法，转换小写
+
+    method = "this's method example"
+    print(method.upper())
+    #输出结果THIS'S METHOD EXAMPLE
+    
+    print(method.lower())
+    #输出结果this's method example
+    
