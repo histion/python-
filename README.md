@@ -72,12 +72,15 @@ print(“ok，你今年:” , age)<br>
 
 
 > #变量三引号多行输出<br>
-example = '''<br>
-这是一个，<br>
-可以…<br>
 
-多行的
+    example = '''
+    这是一个，
+    可以…
 
-变量<br>
-'''
-print(example)  #包括空行在内均会被输出
+    多行的
+
+    变量
+    '''
+    print(example)  #包括空行在内均会被输出
+    
+
