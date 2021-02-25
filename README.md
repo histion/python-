@@ -37,7 +37,7 @@
 
 > #变量名——变量值（数字，可以是整数也可以是小数）
 
-    yourdiv = 114514 
+    yourdiv = 114514
     print(yourdiv)
 
 > #变量名——变量值
@@ -46,7 +46,7 @@
     print(div2)
 
 > #变量名——变量名（最后会输出后者的值，即114514）
-    
+
     div3 = yourdiv
     print(div3)
 
@@ -71,12 +71,12 @@
 
 > #输出年龄（给予变量类型定义）（int整数型 float浮点小数型）<br>
 
-    NT3 = NT.strftime("%Y")   #承接结合上面的输出时间 
+    NT3 = NT.strftime("%Y")   #承接结合上面的输出时间
     nowtime = int(NT3)        #赋予类型可以提前在运算式前赋予
     brith_year = input("你什么年份出生？（输入阿拉伯数字）：  ") #用户在此输入的内容将被记录到brith_year变量
     age = nowtime - int(brith_year)    #int将字符串转换成数字型，否则下面无法输出，因为数字型无法与字符串运算
     print(“ok，你今年:” , age)
-    
+
     #也可以这样写，提前将要输入input的内容处理为数字型<br>
     brith_year = int(input("你什么年份出生？（输入阿拉伯数字）：  "))<br>
     后文则只需要：age = nowtime - brith_year #只改变上面这一行代码的情况下<br>
@@ -94,7 +94,7 @@
     变量
     '''
     print(example)  #包括空行在内均会被输出
-    
+
 # 索引
 
 当以A为起点从左往右时，索引对应 ABCD E————012345，是的，空格也是计入的<br>
@@ -104,11 +104,11 @@
     print(索引[0])
     print(索引[4])
     print(索引[-1])
-    
+
     #如果将[]内定义区间（例如1:3），则会输出区间内所有内容,但会排除3这个索引，即不输出D
     print(索引[1:3])    #输出结果为BC
     print(索引[1:-3])   #输出结果为BC（注意，定义的是区间，而不是方向！所以[1:-3]实际上就是[1:3]）
-    
+
     #如果不定义区间，则任何一边不被定义的区间将直接输出到最后一个字符，如果两边都不被定义，则完整输出变量所有内容
     print(索引[1:])  #输出BCD E
     print(索引[:3])  #输出ABC
@@ -116,7 +116,7 @@
     #同样的，我们可以再设置一个变量来输出
     全索引 = 索引[:]
     print(全索引)    #输出ABCD E
-    
+
 # 格式化字符串 “f”
 基本用法 f'{}{}'
 
@@ -125,28 +125,38 @@
     word = f'{name} he is [{last}]' #注意[]是包在{last}外面的
     print(word)
     #skt have a new loler he is [uzi]
-    
+
 # 计算字符串数量 len函数
 空格和标点也计入
 
     how_many = 'wor ds!'
     print(len(how_many))
-    
+
     #同样可以配合input计算外部文字
     how_many = 'wor ds!'
     print(len(how_many))
     test = input('输入要计算的文字')    #不计算除了第一行外的内容字符数
     print(len(test))
-    
+
 # 方法
 只对字符串有效的函数叫做方法<br>
 upper方法，转换大写<br>
-lower方法，转换小写
+lower方法，转换小写<br>
 
     method = "this's method example"
     print(method.upper())
     #输出结果THIS'S METHOD EXAMPLE
-    
     print(method.lower())
     #输出结果this's method example
-    
+
+find方法，寻找字符/字符串在内容中的索引<br>
+
+    print(method.find('H'))
+    print(method.find('s')) #find方法将会对应括号内字母（区分大小写）第一次出现的位置索引
+
+replace方法，替换字符/字符串，同样区分大小写
+
+    print(method.replace('H','I'))
+    #输出结果为 tIIs's methoD example
+    print(method.replace("HIs's",'I'))
+    #输出结果为 tI methoD example
