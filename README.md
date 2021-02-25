@@ -140,15 +140,16 @@
 
 # 方法
 只对字符串有效的函数叫做方法<br>
-upper方法，转换大写<br>
-lower方法，转换小写<br>
 
+> #upper方法，转换大写<br>
+> #lower方法，转换小写<br>
+'''
     method = "this's method example"
     print(method.upper())
     #输出结果THIS'S METHOD EXAMPLE
     print(method.lower())
     #输出结果this's method example
-
+'''
 find方法，寻找字符/字符串在内容中的索引<br>
 
     print(method.find('H'))
