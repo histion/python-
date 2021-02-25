@@ -146,12 +146,15 @@
 
 > #upper方法，转换大写<br>
 > #lower方法，转换小写<br>
+> #title方法，首字符大写，如果有空格，则每个空格到另一个空格之间字符串的首字母大写,接在'后面的第一个字母也会大写，其他全部转换为小写
 ```python
     method = "this's method example"
     print(method.upper())
     #输出结果THIS'S METHOD EXAMPLE
     print(method.lower())
     #输出结果this's method example
+    print(method.title())
+    输出结果This'S Method Example，马上会变成大写
 ```
 > #find方法，寻找字符/字符串在内容中的索引<br>
 ```python
@@ -160,8 +163,16 @@
 ```
 > #replace方法，替换字符/字符串，同样区分大小写
 ```python
+method = "tHIs's methoD example"
     print(method.replace('H','I'))
     #输出结果为 tIIs's methoD example
     print(method.replace("HIs's",'I'))
     #输出结果为 tI methoD example
+```
+
+# 运算符
+
+> #用in运算符判断字符/串是否在变量中，同样区分大小写
+```python
+print('example' in method) #得到结果为True，如果没有则是Flase
 ```
