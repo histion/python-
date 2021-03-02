@@ -208,3 +208,54 @@ x = 10
 x += 3   #等同与 x = x + 3
 print(x)  #结果13
 ```
+# 数学函数
+
+>roud()函数
+
+用于小数点四舍五入，无论后面多少位小数，总会只保留四舍五入后的整数，且只取决于第一位小数
+
+```python
+a = 3.5
+b = 3.49
+round(a)
+print(round(a)) #输出结果4
+round(b)
+print(round(b))  #输出结果唯3
+```
+
+>abs()函数
+
+取绝对值
+```python
+a = 3.9
+b = -3.6
+abs(a)
+abs(b)
+print(abs(a))   #输出结果3.9
+print(abs(b))   #输出结果3.6
+```
+
+
+# 数学模块
+
+import math引入数学模块，之后便可以使用
+
+例如：
+
+>ceil函数方法，返回大于或者等于指定表达式的最小整数
+```python
+import math  #引入模块
+a = 2.9
+b= 2.1
+print(math.ceil(a))   #得到3
+print(math.ceil(b))   #得到3
+```
+
+>floor函数方法，与ceil相对，返回小于或等于指定表达式的最小整数
+```python
+import math
+a = 2.9
+b= 2.1
+print(math.floor(a))  #结果2
+print(math.floor(b))   #结果2
+```
