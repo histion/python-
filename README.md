@@ -262,7 +262,7 @@ print(math.floor(b))   #结果2
 
 # 判断
 
-就像易语言的“如果真”
+就像易语言的“如果”
 >基本应用
 ```python
 is_hot = False
@@ -278,3 +278,28 @@ else:      #如果上面两个条件都不成立
 
 print("but who care?~o( =∩ω∩= )m") #判断完成后，无论结果是啥都执行这个
 ```
+## 逻辑运算符
+
+and or not
+>and，同时满足条件
+```python
+human = True
+man = True
+if human and man:
+    print("是一个人类男性")  #必须所有条件同时满足True，否则不输出
+```
+>and，满足任一条件
+```python
+human = Flase
+man = True
+if human or man:
+    print("是一个人类或男性")  #满足一个即输出
+```
+
+ >not，令布尔值相反（配合and or 使用）
+ ```python
+human = True
+woman = False  
+if human and not woman:  #not会让布尔值变成相反，即令woman由False变成True
+    print("是一个人类男性")
+  ```
