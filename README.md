@@ -267,9 +267,11 @@ print(math.floor(b))   #结果2
 ```python
 is_hot = False
 is_cold = True
+
 if is_hot:  #如果满足ture
     print("yes, very hot") #如果满足条件，则执行这个
     #如果要终结if的判断，进入如果假判定，则按tab和shift，进入后续（这样做后，那之后的代码都将执行，无论判断是否生效）
+    
 elif is_cold: #如果第一个判定为False那么就就会执行第二个判定
     print("no,it is cold")
 
@@ -278,6 +280,18 @@ else:      #如果上面两个条件都不成立
 
 print("but who care?~o( =∩ω∩= )m") #判断完成后，无论结果是啥都执行这个
 ```
+
+>判断大小
+```python
+temperature = 29
+if temperature >= 30 :  #如果这里想用等式，那就必须用==而不是=
+    print("天气大于等于30" )
+else:
+    print("天气小于30")
+
+print(f"当前气温：{temperature}")
+```
+
 ## 逻辑运算符
 
 and or not
