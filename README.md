@@ -292,6 +292,18 @@ else:
 print(f"当前气温：{temperature}")
 ```
 
+>实战例子:输入名字，判断字符，必须在3-50个字符之间
+```python
+name = input("你的名字是？")  #用户输入
+how_many = len(name) #记录字符数
+
+if how_many < 3:
+    print("不行，你的名字必须大于三个字符")
+elif how_many >50:
+    print("不行，你的名字必须小于五十个字符")
+else:
+    print("可以，你的大名事:" + name)
+```
 ## 逻辑运算符
 
 and or not
@@ -316,4 +328,4 @@ human = True
 woman = False  
 if human and not woman:  #not会让布尔值变成相反，即令woman由False变成True
     print("是一个人类男性")
-  ```
+ ```
