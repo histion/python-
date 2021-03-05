@@ -329,3 +329,14 @@ woman = False
 if human and not woman:  #not会让布尔值变成相反，即令woman由False变成True
     print("是一个人类男性")
  ```
+
+# while循环
+
+设定一个条件，如果不满足则一直循环
+```python
+A = 1
+while A <= 20:    # 条件，如果满足A<=20，则重复执行下面函数,直到条件被满足
+    print(A)
+    A += 1  # 如果这个放在print前面，最终一个数会是21
+print("over") #跳出循环
+```
