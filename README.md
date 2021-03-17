@@ -340,3 +340,16 @@ while A <= 20:    # 条件，如果满足A<=20，则重复执行下面函数,直
     A += 1  # 如果这个放在print前面，最终一个数会是21
 print("over") #跳出循环
 ```
+> #进阶用法
+```python
+secret_number = 9
+t = 0 #每次失败都会加一的变量，判断是否失败超过三次
+while t < 3:
+    guess = int(input("猜猜是几？:")) #转化为整数型
+    t += 1 #每次执行都会+1次
+    if guess == secret_number:  #执行判断上面input的是否为9
+        print("猜对了")
+        break #满足条件，终止循环
+else: #while循环时不会被执行，而break结束了循环，所以也不会执行到这一步，因此只有超过三次后才会执行
+    print("超过尝试次数")
+ ```
